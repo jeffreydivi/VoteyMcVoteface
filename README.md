@@ -6,7 +6,7 @@ Created at [KnightHacks 2020](https://knighthacks.org/) by:
 
 - [Cameron B.](https://github.com/CameronBerezuk)
 - [Conrad S.](https://github.com/conradsmi)
-- [Prathik](https://github.com/prathik2001)
+- [Prathik R.](https://github.com/prathik2001)
 - [Jeffrey D.V.](https://github.com/jeffreydivi)
 
 Demo at [VoteyMcVote.space](https://VoteyMcVote.space/)
