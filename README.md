@@ -1,6 +1,6 @@
 # VoteyMcVote.space
 
-A single-instance, game-styled surveying tool for multiple voting techniques written in Python and JavaScript.
+A single-instance, game-styled surveying tool for multiple polling systems written in Python and JavaScript.
 
 Created at [KnightHacks 2020](https://knighthacks.org/) by:
 
@@ -27,6 +27,7 @@ Demo at [VoteyMcVote.space](https://VoteyMcVote.space/)
 ## Technologies Used
 
 - [Flask](https://palletsprojects.com/p/flask/)
+- [Socket.IO](https://socket.io/)
 - [Flask-SocketIO](https://flask-socketio.readthedocs.io/en/latest/)
 - [SortableJS](https://sortablejs.github.io/sortablejs/)
 
