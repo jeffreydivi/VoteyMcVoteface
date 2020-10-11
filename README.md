@@ -4,10 +4,10 @@ A single-instance, game-styled surveying tool for multiple voting techniques wri
 
 Created at [KnightHacks 2020](https://knighthacks.org/) by:
 
-- Cameron B.
-- Conrad S.
-- Prathik
-- Jeffrey D.V.
+- [Cameron B.](https://github.com/CameronBerezuk)
+- [Conrad S.](https://github.com/conradsmi)
+- [Prathik](https://github.com/prathik2001)
+- [Jeffrey D.V.](https://github.com/jeffreydivi)
 
 Demo at [VoteyMcVote.space](https://VoteyMcVote.space/)
 
@@ -29,6 +29,15 @@ Demo at [VoteyMcVote.space](https://VoteyMcVote.space/)
 - [Flask](https://palletsprojects.com/p/flask/)
 - [Flask-SocketIO](https://flask-socketio.readthedocs.io/en/latest/)
 - [SortableJS](https://sortablejs.github.io/sortablejs/)
+
+## Setup
+
+```bash
+# Install requirements
+pip3 install -r requirements.txt
+# Start the server
+python3 index.py
+```
 
 ## Known Bugs
 
