@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/index.css">
+        <title>Admin - VoteyMcVotespace</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=0">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <div class="left">
+                    <h1>VoteyMcVotespace</h1>
+                </div>
+                <div class="right">
+                    Admin Panel
+                </div>
+            </div>
+        </nav>
+        <div id="controlPanel" class="content">
+            <h1>Control Panel</h1>
+            <p>Question</p>
+            <input type="text" id="question" placeholder="Question..."><button id="pushQuestion">Update Question</button>
+            <div class="btnGrid">
+                <button id="unlock">Unlock Devices</button>
+                <button id="locker">Lock Devices</button>
+            </div>
+            <div class="btnGrid">
+                <button id="viewResults">Show Results</button>
+                <button id="hideResults">Hide Results</button>
+            </div>
+            <h2>Options</h2>
+            <div class="options">
+                <div value="0">
+                    <p>Option #1</p>
+                    <input placeholder="Option..." type="text" >
+                </div>
+                <div value="1">
+                    <p>Option #2</p>
+                    <input placeholder="Option..." type="text" >
+                </div>
+                <div value="2">
+                    <p>Option #3</p>
+                    <input placeholder="Option..." type="text" >
+                </div>
+                <div value="3">
+                    <p>Option #4</p>
+                    <input placeholder="Option..." type="text" >
+                </div>
+                <div value="4">
+                    <p>Option #5</p>
+                    <input placeholder="Option..." type="text" >
+                </div>
+            </div>
+            <button id="newQ">Add Option</button>
+            <button id="saveQ">Save Options</button>
+        </div>
+        <div id="askForPassphrase" class="content">
+            <h1>Enter Passphrase</h1>
+            <input type="text" id="quoteOnQuoteAuth">
+            <button id="quoteOnQuoteLogin">"""Log In"""</button>
+        </div>
+    </body>
+    <script src="admin.js"></script>
+</html>

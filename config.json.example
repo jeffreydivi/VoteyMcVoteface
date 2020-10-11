@@ -1,0 +1,8 @@
+{
+    "secret_key": "SOME_RANDOM_SECRET_KEY",
+    "password": "PASSPHRASE_FOR_ADMIN_PANEL",
+    "debug": false,
+    "port": 8080,
+    "options": 5,
+    "vbucks": 25
+}

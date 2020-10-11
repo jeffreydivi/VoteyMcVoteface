@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/index.css">
+        <title>VoteyMcVotespace</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=0">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/gh/sortablejs/sortablejs@1.10/Sortable.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <div class="left">
+                    <h1>VoteyMcVotespace</h1>
+                </div>
+            </div>
+        </nav>
+        <div id="vote" class="content">
+            <h1>Voting</h1>
+            <p id="question">&nbsp;</p>
+            <br>
+            <div id="fptp" class="page active">
+                <h3>First-Past-The-Post</h3>
+                <p>Select a single option to vote for.</p><br>
+                <div id="fptpList">
+                    
+                </div>
+
+                <div class="btnGrid">
+                    <button class="hide"></button>
+                    <button id="pageNav" next="borda">Next</button>
+                </div>
+            </div>
+            <div id="borda" class="page">
+                <h3>Borda Count</h3>
+                <p>Rank your preferences from greatest to least via drag-and-drop.</p><br>
+
+                <div id="bordaList">
+                </div>
+
+                <div class="btnGrid">
+                    <button id="pageNav" next="fptp">Back</button>
+                    <button id="pageNav" next="score">Next</button>
+                </div>
+            </div>
+            <div id="score" class="page">
+                <h3>Score Voting</h3>
+                <p>Option with the highest total score wins.</p><br>
+
+                <div id="scoreSliders">
+                </div>
+                    
+                <div class="btnGrid">
+                    <button id="pageNav" next="borda">Back</button>
+                    <button id="pageNav" next="quadratic">Next</button>
+                </div>
+            </div>
+            <div id="quadratic" class="page">
+                <h3>Quadratic voting</h3>
+                <p>Allocate your votes as you wish, but each additional vote is exponentially more expensive.</p><br>
+
+                <div class="vbuck-shop">
+                </div>
+                
+                <h3 class="shop">Votes Remaining: <span id="quadVoteCount">15</span></h3>
+
+                <div class="btnGrid">
+                    <button id="pageNav" next="score">Back</button>
+                    <button id="submit">Cast Votes</button>
+                </div>
+            </div>
+        </div>
+        <div id="lock" class="content">
+            <h1>Thanks for voting!</h1>
+            <p id="question">&nbsp;</p>
+            <br>
+            <table>
+                <thead>
+                    <td>Ranking</td>
+                    <td>First-Past-The-Post</td>
+                    <td>Borda</td>
+                    <td>Score</td>
+                    <td>Quadratic</td>
+                </thead>
+                <tbody id="liveResults">
+                </tbody>
+            </table>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
